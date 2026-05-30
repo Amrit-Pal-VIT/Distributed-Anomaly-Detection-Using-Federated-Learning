@@ -8,7 +8,7 @@
 
 **Authors:**
 - Pratyush Kumar Singh
-- Abishi Chowdhury (Member, IEEE) - Corresponding Author
+- Abishi Chowdhury (Member, IEEE)
 - Amrit Pal (Member, IEEE)
 
 **Affiliation:** School of Computer Science and Engineering, Vellore Institute of Technology, Chennai, Tamil Nadu 600127, India
