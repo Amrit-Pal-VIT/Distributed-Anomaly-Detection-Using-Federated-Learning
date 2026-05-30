@@ -96,11 +96,6 @@ Pratyush/
 
 **Objective:** Train a federated learning model to classify handwritten digits and letters using the EMNIST dataset.
 
-**Dataset Details:**
-- **62 classes** (digits 0-9, uppercase A-Z, lowercase a-z)
-- **Non-IID distribution:** Data is partitioned by handwriter (each client has one handwriter's data)
-- **Input size:** 28×28 pixel grayscale images (784 dimensions flattened)
-
 **Model Architecture:**
 ```
 InputLayer (784 dimensions)
