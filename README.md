@@ -42,12 +42,12 @@ Traditional video surveillance systems face critical challenges:
 - **Security Risks:** Centralized data storage increases attack surface
 
 Federated Learning addresses these challenges by:
-- ✅ Processing video locally on surveillance devices
-- ✅ Sharing only model updates (weights, gradients) with the server
-- ✅ Reducing bandwidth consumption dramatically
-- ✅ Enabling real-time local detection
-- ✅ Maintaining privacy throughout the process
-- ✅ Distributing computational load across clients
+- Processing video locally on surveillance devices
+- Sharing only model updates (weights, gradients) with the server
+- Reducing bandwidth consumption dramatically
+- Enabling real-time local detection
+- Maintaining privacy throughout the process
+- Distributing computational load across clients
 
 This project compares three federated learning algorithms: **FedAvg** (weighted averaging), **FedSGD** (gradient-based), and **Unweighted FedAvg** (uniform averaging).
 
@@ -215,12 +215,12 @@ Each experiment configuration directory contains:
 
 ## Main Features
 
-✅ **Privacy-Preserving:** Raw client data never leaves client devices  
-✅ **Non-IID Data:** Experiments with realistic heterogeneous data distributions  
-✅ **Multiple Algorithms:** Comparative analysis of FedAvg, FedSGD, and variants  
-✅ **Scalability Testing:** 5-30 client scenarios to evaluate algorithm performance  
-✅ **Comprehensive Metrics:** Accuracy, loss, precision, recall, and F1-score tracking  
-✅ **Two Domains:** Computer vision (EMNIST) and network security (anomaly detection)  
+**Privacy-Preserving:** Raw client data never leaves client devices  
+**Non-IID Data:** Experiments with realistic heterogeneous data distributions  
+**Multiple Algorithms:** Comparative analysis of FedAvg, FedSGD, and variants  
+**Scalability Testing:** 5-30 client scenarios to evaluate algorithm performance  
+**Comprehensive Metrics:** Accuracy, loss, precision, recall, and F1-score tracking  
+**Two Domains:** Computer vision (EMNIST) and network security (anomaly detection)  
 
 ## Data Characteristics
 
@@ -242,19 +242,19 @@ Each experiment configuration directory contains:
 
 Based on comprehensive experiments on the UCF-Crime dataset:
 
-✅ **Unweighted FedAvg achieves best performance:**
+**Unweighted FedAvg achieves best performance:**
 - Highest accuracy: **85%** at 25 clients
 - Lowest loss: **0.53** at 25 clients  
 - Consistent improvement across all client configurations
 - Superior handling of non-IID data distributions
 
-✅ **FedAvg (weighted averaging) shows solid performance:**
+**FedAvg (weighted averaging) shows solid performance:**
 - Accuracy: **82%** at 30 clients
 - Loss: **0.64** at 30 clients
 - Consistent convergence with increasing clients
 - Acceptable for balanced data scenarios
 
-❌ **FedSGD is not recommended:**
+**FedSGD is not recommended:**
 - Highly erratic performance
 - Maximum accuracy: **41%** (unsatisfactory)
 - High loss: **1.59-1.91** range
@@ -308,16 +308,16 @@ This work makes several important contributions to federated learning research:
 
 ## Research Questions Addressed
 
-1. ✅ **Can federated learning maintain accuracy for video anomaly detection?**
+1. **Can federated learning maintain accuracy for video anomaly detection?**
    - Yes: Unweighted FedAvg achieves 85% accuracy without centralizing video data
 
-2. ✅ **How does client weighting affect non-IID data handling?**
+2. **How does client weighting affect non-IID data handling?**
    - Unweighted averaging outperforms weighted FedAvg for heterogeneous data
 
-3. ✅ **How many clients optimize performance?**
+3. **How many clients optimize performance?**
    - Sweet spot: 25 clients for Unweighted FedAvg, 30 clients for FedAvg
 
-4. ✅ **Is federated learning applicable across domains?**
+4. **Is federated learning applicable across domains?**
    - Yes: Successfully demonstrated on EMNIST (vision) and UCF-Crime (surveillance)
 
 ## Implementation & Execution
@@ -369,13 +369,13 @@ where each client contributes equally regardless of data size.
 
 ## Important Notes
 
-- ✅ All experiments implemented in Jupyter Notebooks for reproducibility
-- ✅ Models compatible with TensorFlow Federated (TFF) framework
-- ✅ Non-IID data distribution intentional for realistic evaluation
-- ✅ Results files organized by client count and algorithm configuration
-- ✅ Experiments portable between Google Colab and local Jupyter environments
-- ✅ No raw data (video or images) ever centralized
-- ✅ Communication overhead analysis included in paper
+- All experiments implemented in Jupyter Notebooks for reproducibility
+- Models compatible with TensorFlow Federated (TFF) framework
+- Non-IID data distribution intentional for realistic evaluation
+- Results files organized by client count and algorithm configuration
+- Experiments portable between Google Colab and local Jupyter environments
+- No raw data (video or images) ever centralized
+- Communication overhead analysis included in paper
 
 ### Reference to Paper
 
